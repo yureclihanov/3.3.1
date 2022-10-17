@@ -1,6 +1,5 @@
 package com.springboot.servise;
-
-import com.springboot.dao.Dao;
+import com.springboot.dao.UserDao;
 import com.springboot.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,13 +9,13 @@ import java.util.List;
 
 @Service
 @Transactional
-public class ServiseImpl implements Servise {
+public class UserServiceImpl implements UserService {
 
 
-    private Dao dao;
+    private UserDao dao ;
 
     @Autowired
-    public ServiseImpl(Dao dao) {
+    public UserServiceImpl(UserDao dao) {
         this.dao = dao;
     }
 

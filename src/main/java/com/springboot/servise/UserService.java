@@ -5,7 +5,7 @@ import com.springboot.model.User;
 
 import java.util.List;
 
-public interface Servise {
+public interface UserService {
 
     List<User> allUsers();
     User findUserById(int id);

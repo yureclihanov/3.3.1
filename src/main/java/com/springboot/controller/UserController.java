@@ -1,7 +1,7 @@
 package com.springboot.controller;
 
 import com.springboot.model.User;
-import com.springboot.servise.Servise;
+import com.springboot.servise.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/users")
 public class UserController {
 
-    private final Servise servise;
+    private final UserService servise;
 
     @Autowired
-    public UserController(Servise servise) {
+    public UserController(UserService servise) {
         this.servise = servise;
     }
 

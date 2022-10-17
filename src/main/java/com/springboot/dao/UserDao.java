@@ -6,7 +6,7 @@ import com.springboot.model.User;
 
 import java.util.List;
 
-public interface Dao {
+public interface UserDao {
     List<User> allUsers();
     User findUserById(int id);
     void add(User user);

@@ -9,7 +9,7 @@ import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
-public class DaoImpl implements Dao  {
+public class UserDaoImpl implements UserDao {
 
 
 
